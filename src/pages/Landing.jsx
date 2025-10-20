@@ -23,7 +23,7 @@ export default function Landing() {
   const opacity = useTransform(scrollYProgress, [0, 0.2], [1, 0]);
   const scale = useTransform(scrollYProgress, [0, 0.2], [1, 0.95]);
 
-  const whatsappNumber = "5512991154631";
+  const whatsappNumber = "5511965879386";
   const whatsappUrl = `https://wa.me/${whatsappNumber}`;
   const logoUrl = "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68f62e95746671667def3faf/c8fd58ec2_CpiadeLogoConnectSistemas.jpg";
 
