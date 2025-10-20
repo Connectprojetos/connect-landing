@@ -1,13 +1,162 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="https://base44.com/logo_v2.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Base44 APP</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Connect Projetos & Sistemas</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+      color: #ffffff;
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 2rem;
+      text-align: center;
+      background: linear-gradient(90deg, #2F80ED, #1CB5E0);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    h1 {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+
+    .hero {
+      padding: 4rem 2rem;
+      text-align: center;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .hero iframe {
+      width: 100%;
+      height: 400px;
+      border: none;
+      border-radius: 12px;
+      margin-top: 2rem;
+    }
+
+    .section {
+      padding: 3rem 2rem;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .section h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #00c6ff;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .card {
+      background: #1e1e1e;
+      border-radius: 12px;
+      padding: 2rem;
+      border: 1px solid #333;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+      border-color: #00c6ff;
+    }
+
+    .card h3 {
+      color: #00c6ff;
+      margin-bottom: 1rem;
+    }
+
+    .card p {
+      color: #ccc;
+    }
+
+    .cta {
+      text-align: center;
+      margin: 4rem 0;
+    }
+
+    .cta a {
+      background: linear-gradient(90deg, #00c6ff, #0072ff);
+      color: white;
+      padding: 1rem 2rem;
+      border-radius: 30px;
+      text-decoration: none;
+      font-size: 1.2rem;
+      transition: background 0.3s ease;
+    }
+
+    .cta a:hover {
+      background: linear-gradient(90deg, #0072ff, #00c6ff);
+    }
+
+    footer {
+      padding: 2rem;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #777;
+    }
+
+    @media (max-width: 768px) {
+      .hero iframe {
+        height: 250px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Connect Projetos & Sistemas</h1>
+  </header>
+
+  <section class="hero">
+    <p>Transformamos negócios com soluções inteligentes para Varejo, Food Services e Prestação de Serviços. Escolha os módulos ideais para seu modelo de operação!</p>
+    
+    <!-- Substitua abaixo pelo seu link do YouTube -->
+    <iframe src="https://www.youtube.com/embed/SEU_VIDEO_ID" allowfullscreen></iframe>
+  </section>
+
+  <section class="section">
+    <h2>Nossos Sistemas</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Varejo</h3>
+        <p>Controle de estoque, PDV, emissão de NFC-e, relatórios e integrações com marketplace. Ideal para lojas físicas e online.</p>
+      </div>
+      <div class="card">
+        <h3>Food Services</h3>
+        <p>Comandas, delivery integrado, controle de cozinha e gestão de mesas. Solução completa para bares, restaurantes e lanchonetes.</p>
+      </div>
+      <div class="card">
+        <h3>Serviços</h3>
+        <p>Agenda, controle financeiro, cadastro de clientes, emissão de recibos e integração com plataformas externas. Perfeito para prestadores de serviços.</p>
+      </div>
+    </div>
+    <p style="text-align: center; margin-top: 2rem; color: #999;">Os valores são personalizados conforme os módulos escolhidos. Faça uma simulação entrando em contato com nossa equipe.</p>
+  </section>
+
+  <div class="cta">
+    <a href="https://wa.me/SEUNUMERO" target="_blank">Fale com um especialista no WhatsApp</a>
+  </div>
+
+  <footer>
+    © 2025 Connect Projetos & Sistemas. Todos os direitos reservados.
+  </footer>
+</body>
 </html>
